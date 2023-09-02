@@ -1,0 +1,110 @@
+/* Resetare stiluri implicite ale browserului */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: rgb(170, 230, 218);
+}
+
+/* Stilizare antet */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  background-color: #f1e509;
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Stilizare link-uri din antet */
+header a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+/* Stilizează containerul pentru conținut */
+.container {
+  max-width: 1200px; /* Alegeți lățimea dorită pentru conținut */
+  margin: 0 auto; /* Centrează containerul pe pagină */
+  padding: 20px; /* Adaugă un spațiu de la marginea paginii */
+}
+
+
+/* Stilizare continut central */
+.centered {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Stilizare imagine in cadrul textului */
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.image {
+  max-width: 500px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.my-work a{
+  text-align: center;
+}
+
+/* Stilizare subsol */
+footer {
+  background-color: #333;
+  color: #f1e509;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Stilizare lista */
+ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  font-size: 20px;
+}
+
+/* Stilizare titlu h3 */
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Stilizare titlu Curriculum Vitae */
+header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Stilizare conținut pentru limba engleză */
+.content.en {
+  color: #333;
+}
+
+/* Stilizare conținut pentru limba germană */
+.content.de {
+  color: #800000;
+}

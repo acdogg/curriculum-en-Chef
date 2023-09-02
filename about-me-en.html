@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Alte stiluri */
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index-en.html">Home</a>
+        <a href="about-me-en.html">About Me</a>
+        <a href="professional-experience-en.html">Professional Experience</a>
+        <a href="studies-and-schools-graduated-en.html">Studies and Schools Graduated</a>
+        <a href="contact-en.html">Contact</a>
+        <a href="my-work-en.html">My Work</a>
+        <h2><strong>Curriculum Vitae</strong></h2>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="content en">
+        <div class="container">
+            <h1 class="centered">About Me</h1>
+
+            <div class="image-container">
+                <img class="image" src="images/20160304_155819.jpg" alt="Photo in About Me section">
+                <div class="text">
+                    <p>Name: <strong>Andrei</strong></p>
+                    <p>Surname: <strong>Niculae</strong></p>
+                    <p>Date of birth: <strong>14.11.1981</strong></p>
+                    <p>City: <strong>Bucharest</strong></p>
+                    <p>Country: <strong>Romania</strong></p>
+                    <p>Phone: <strong>0041 77 204 61 56</strong></p>
+                    <p>Email: <strong>andrew_costea@yahoo.com</strong></p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="image-container">
+                <img class="image" src="images/20170607_003937.jpg" alt="Photo in About Me section">
+                <div class="text">
+                    <p>My name is Andrei and I am a Chef since 2013. <br>
+                        Before attending specialized courses, which are presented in the specific sections of this Curriculum, I practiced football for 15 years. <br>
+                        Then I had various jobs such as: construction site worker, street paving and asphalting worker, worker distributing advertising leaflets. <br>
+                        I did these activities during the college I attended, but unfortunately I didn't finish. <br>
+                        After these activities, I pursued those specific to gastronomy, which, as I mentioned above, I will describe and detail in the other sections.<br>
+                        From 2021 I started learning programming languages such as C++, SQL, but also HTML and CSS. As a result, this website where I wrote this Curriculum is made by me.</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            
+            <div class="image-container">
+                <img class="image" src="images/43914506_2273512142878484_5438350926122566018_n.jpg" alt="Photo in About Me section">
+                <div class="text">
+                    <h3>Skills and Competences</h3>
+                    <ul>
+                        <li>Quick adaptation in almost any situation and environment</li>
+                        <li>Maintaining calm in difficult and stressful situations</li>
+                        <li>The ability to work with and in a team</li>
+                        <li>Ability to work under pressure</li>
+                        <li>Ability to work in a fast-paced environment</li>
+                        <li>Ability to create new and innovative recipes.</li>
+                        <li>The ability to bring new elements to the visual presentation of dishes.</li>
+                        <li>Ability to organize the kitchen to ensure efficiency.</li>
+                        <li>Time management to prepare food efficiently and in a timely manner.</li>
+                        <li>Ability to coordinate a team of cooks and kitchen helpers.</li>
+                        <li>Ability to communicate clearly and motivate the team.</li>
+                        <li>Knowledge of ingredient stock management and raw material supply.</li>
+                        <li>Ability to keep inventory within limits and avoid waste.</li>
+                        <li>The ability to maintain the quality of dishes through attention to detail.</li>
+                        <li>Ensuring dishes are presented and served appropriately.</li>
+                        <li>Knowledge of hygiene and food safety rules.</li>
+                        <li>Ability to keep kitchen clean and tidy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="image-container">
+                <img class="image" src="images/43267514_1653368241436141_2560550349454752974_n.jpg" alt="Foto im Bereich Über Mich">
+                <div class="text">
+                    <h3>Skills and competences - foreign languages</h3>
+                    <ul>
+                        <li>Romanian - native language</li>
+                        <li>English - Intermediate to Advanced</li>
+                        <li>German - basic to intermediate</li>
+                        <li>Italian - Intermediate</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="centered">© 2023 Andrei-Costea Niculae. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Obține elementul de selectare a limbii
+        const languageSelector = document.getElementById('language-selector');
+    
+        // Atașează un eveniment de schimbare a selecției
+        languageSelector.addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            const currentPage = window.location.pathname;
+            let newPage = '';
+    
+            // Construiește noul URL pentru pagina corespunzătoare limbii selectate
+            if (currentPage.endsWith('-en.html')) {
+                newPage = currentPage.replace('-en.html', `-${selectedLanguage}.html`);
+            } else if (currentPage.endsWith('-de.html')) {
+                newPage = currentPage.replace('-de.html', `-${selectedLanguage}.html`);
+            } else {
+                newPage = `${currentPage.split('.')[0]}-${selectedLanguage}.html`;
+            }
+    
+            // Redirecționează utilizatorul la noua pagină
+            window.location.href = newPage;
+        });
+    </script>
+    
+</body>
+</html>
